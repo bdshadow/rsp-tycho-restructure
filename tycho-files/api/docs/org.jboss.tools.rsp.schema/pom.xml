@@ -46,7 +46,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.jboss.tools.rsp</groupId>
+			<groupId>org.jboss.tools.rsp.api.bundles</groupId>
 			<artifactId>org.jboss.tools.rsp.api</artifactId>
 			<version>0.0.9-SNAPSHOT</version>
 		</dependency>
