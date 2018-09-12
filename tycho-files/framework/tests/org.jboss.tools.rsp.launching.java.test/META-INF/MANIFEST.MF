@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.jboss.tools.rsp.launching.java.test
-Automatic-Module-Name: org.jboss.tools.rsp.launching.java
+Automatic-Module-Name: org.jboss.tools.rsp.launching.java.test
 Bundle-Version: 0.0.9.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .
@@ -19,10 +19,9 @@ Import-Package: com.google.gson,
  org.jboss.tools.rsp.launching.utils,
  org.osgi.framework,
  org.osgi.service.log
-Export-Package: org.jboss.tools.rsp.eclipse.jdt.core,
- org.jboss.tools.rsp.eclipse.jdt.launching,
- org.jboss.tools.rsp.launching.java
 Require-Bundle: org.jboss.tools.rsp.api;bundle-version="0.0.9",
  org.jboss.tools.rsp.launching;bundle-version="0.0.9",
+ org.jboss.tools.rsp.launching.java;bundle-version="0.0.9",
  org.junit,
- org.assertj.core;bundle-version="2.1.0"
+ org.assertj.core,
+ org.mockito

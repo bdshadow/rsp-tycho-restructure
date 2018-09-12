@@ -12,7 +12,7 @@
 	<artifactId>org.jboss.tools.rsp.launching.java.test</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 
-	<build>
+	<!--<build>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
@@ -20,20 +20,5 @@
 				<version>${tycho-version}</version>
 			</plugin>
 		</plugins>
-	</build>
-
-	<dependencies>
-		<dependency>
-		    <groupId>org.mockito</groupId>
-		    <artifactId>mockito-core</artifactId>
-		    <version>${mockito-core.version}</version>
-		    <scope>test</scope>
-		</dependency>
-		<dependency>
-		    <groupId>org.assertj</groupId>
-		    <artifactId>assertj-core</artifactId>
-		    <version>${assertj-core.version}</version>
-		    <scope>test</scope>
-		</dependency>
-  </dependencies>
+	</build>-->
 </project>

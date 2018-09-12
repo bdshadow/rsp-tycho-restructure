@@ -9,7 +9,7 @@ Bundle-Activator: org.jboss.tools.rsp.launching.java.JavaLaunchingActivator
 Bundle-ClassPath: .
 Import-Package: com.google.gson,
  javax.xml.parsers,
- org.xml.sax,	
+ org.xml.sax,
  org.jboss.tools.rsp.api,
  org.jboss.tools.rsp.api.dao,
  org.jboss.tools.rsp.api.dao.util,
@@ -23,6 +23,9 @@ Import-Package: com.google.gson,
  org.osgi.service.log
 Export-Package: org.jboss.tools.rsp.eclipse.jdt.core,
  org.jboss.tools.rsp.eclipse.jdt.launching,
- org.jboss.tools.rsp.launching.java
+ org.jboss.tools.rsp.launching.java,
+ org.jboss.tools.rsp.internal.launching.java;x-friends:="org.jboss.tools.rsp.launching.java.test",
+ org.jboss.tools.rsp.internal.launching.java.util;x-friends:="org.jboss.tools.rsp.launching.java.test",
+ org.jboss.tools.rsp.eclipse.jdt.internal.launching;x-friends:="org.jboss.tools.rsp.launching.java.test"
 Require-Bundle: org.jboss.tools.rsp.api;bundle-version="0.0.9",
  org.jboss.tools.rsp.launching;bundle-version="0.0.9"
