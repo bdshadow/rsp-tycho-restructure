@@ -31,7 +31,9 @@ git mv server-wildfly/* server-wildfly/.[!.]*  runtimes/bundles/org.jboss.tools.
 rm -rf server-minishift server-wildfly
 cd runtimes
 mkdir tests/org.jboss.tools.rsp.server.wildfly.test/src -p
-mv bundles/org.jboss.tools.rsp.server.wildfly/src/test/java/* tests/org.jboss.tools.rsp.server.wildfly.test/src
+git mv bundles/org.jboss.tools.rsp.server.wildfly/src/test/java/* tests/org.jboss.tools.rsp.server.wildfly.test/src
+git mv bundles/org.jboss.tools.rsp.server.wildfly/src/test/resources/* tests/org.jboss.tools.rsp.server.wildfly.test/
+
 
 cd ../../
 cp -rf tycho-files/* rsp-server
