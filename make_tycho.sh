@@ -19,8 +19,10 @@ git mv ../../launching-java/* ../../launching-java/.[!.]* org.jboss.tools.rsp.la
 git mv ../../server/* ../../server/.[!.]* org.jboss.tools.rsp.server
 git mv ../../server-spi/* ../../server-spi/.[!.]* org.jboss.tools.rsp.server.spi
 cd ../
-mkdir tests/org.jboss.tools.rsp.launching.java.test/src tests/org.jboss.tools.rsp.launching.java.test/resources -p
-cp -rf bundles/org.jboss.tools.rsp.launching.java/src/test/java/* tests/org.jboss.tools.rsp.launching.java.test/src
+mkdir tests/org.jboss.tools.rsp.launching.java.test/src -p
+mv bundles/org.jboss.tools.rsp.launching.java/src/test/java/* tests/org.jboss.tools.rsp.launching.java.test/src
+mkdir tests/org.jboss.tools.rsp.server.test/src -p
+mv bundles/org.jboss.tools.rsp.server/src/test/java/org/jboss/tools/rsp/server/* tests/org.jboss.tools.rsp.server.test/src
 cd ../
 rm -rf launching launching-java server server-spi
 mkdir runtimes/bundles/org.jboss.tools.rsp.server.minishift runtimes/bundles/org.jboss.tools.rsp.server.wildfly -p
