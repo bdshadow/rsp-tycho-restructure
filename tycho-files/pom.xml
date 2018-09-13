@@ -27,6 +27,25 @@
 		<module>distribution</module>
 	</modules>
 
+	<repositories>
+	    <repository>
+        	<id>tp-site-simrel</id>
+	        <url>http://download.jboss.org/jbosstools/updates/requirements/photon/201806191120-Photon.0.RC4a/</url>
+	        <layout>p2</layout>
+	    </repository>
+	    <repository>
+	        <id>tp-site-orbit</id>
+	        <url>http://download.jboss.org/jbosstools/updates/requirements/orbit/R20180606145124/</url>
+	        <layout>p2</layout>
+	    </repository>
+	    <repository>
+	        <id>tp-site-locus</id>
+	        <url>http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.7.0/jbosstools-locus-1.7.0-updatesite.zip-unzip/</url>
+	        <layout>p2</layout>
+	    </repository>
+	</repositories>
+
+
 	<build>
 		<pluginManagement>
 			<plugins>
