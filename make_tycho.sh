@@ -37,3 +37,12 @@ git mv bundles/org.jboss.tools.rsp.server.wildfly/src/test/resources/* tests/org
 
 cd ../../
 cp -rf tycho-files/* rsp-server
+
+cd rsp-server
+git add -A
+git commit -a -m "Reorganize repository into a tycho build"
+git remote add rob git@github.com:robstryker/rsp-server.git
+git fetch rob
+git cherry-pick e4b7e51f850978dc068d17e4992faa74a471c287
+
+
